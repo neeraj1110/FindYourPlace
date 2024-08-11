@@ -1,6 +1,7 @@
 import express from "express";
 import mongoose from "mongoose";
 import dotenv from "dotenv";
+import userRouter from "./routes/user.route.js"; // Import the router
 dotenv.config();
 
 mongoose
@@ -11,8 +12,9 @@ mongoose
   .catch((err) => {
     console.log(err);
   });
-const app = express();
+const app = express(); 
 
+app.use("/api/users", userRouter); // /api/users/test par chalega
 app.listen(3000, () => {
   console.log("Server is running on port 3000");
-}); 
+});
