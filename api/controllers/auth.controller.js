@@ -13,9 +13,9 @@ const signup = async (req, res, next) => {
   try {
     await newUser.save();
     res.status(201).json("User Created Successfully");
-  } catch (error) {
-    // res.status(500).json(error.message);
-    next(error); //  middleware for error
+  } catch (er) {
+    // res.status(500).json(er.message);
+    next(er); //  middleware for error
   }
 };
 
