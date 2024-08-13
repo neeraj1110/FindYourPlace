@@ -1,5 +1,5 @@
 // Created a function to handle errors (manually)
-const errorHandler = (statusCode, message) => {
+export const errorHandler = (statusCode, message) => {
   const error = new Error();
   error.statusCode = statusCode;
   error.message = message;

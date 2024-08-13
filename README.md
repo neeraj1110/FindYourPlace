@@ -40,6 +40,9 @@ In summary, this setup allows you to make API requests to /api on your Vite deve
 
 
 
-
+authentication (for like, if user change its password then it must be authenticated user)
+npm i jsonwebtoken
+token -> id and secret key
+now save this token to cookie
 
 
