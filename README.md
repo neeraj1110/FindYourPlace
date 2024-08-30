@@ -45,4 +45,10 @@ npm i jsonwebtoken
 token -> id and secret key
 now save this token to cookie
 
+Firebase installed at client side
+firebase pe project register kiya hai
+code vahi se liya h uska
+apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+Google authentication kiya firebase ki website par
+
 
